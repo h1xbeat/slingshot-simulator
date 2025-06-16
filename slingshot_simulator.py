@@ -20,9 +20,11 @@ GRAY = (200, 200, 200)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 
-window_sprite = pygame.image.load(r"C:\Users\zehar\Desktop\sinulator\sprites\window.png")
-projectile_sprite = pygame.image.load(r"C:\Users\zehar\Desktop\sinulator\sprites\projectile.png")
-slingshot_sprite = pygame.image.load(r"C:\Users\zehar\Desktop\sinulator\sprites\slingshot.png")
+PROJ_FOLDER = os.path.dirname(os.path.abspath(__file__))
+
+window_sprite = pygame.image.load(rf"{PROJ_FOLDER}\window.png")
+projectile_sprite = pygame.image.load(rf"{PROJ_FOLDER}\projectile.png")
+slingshot_sprite = pygame.image.load(rf"{PROJ_FOLDER}\slingshot.png")
 
 SLING_X, SLING_Y = 100, HEIGHT - 100
 
